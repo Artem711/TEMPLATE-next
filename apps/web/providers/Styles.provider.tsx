@@ -2,7 +2,7 @@
 import React from 'react'
 
 // COMPONENTS IMPORTS //
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, CSSReset, extendTheme } from '@chakra-ui/react'
 
 // EXTRA IMPORTS //
 
@@ -13,5 +13,13 @@ interface IProps {
 }
 
 export function StylesProvider(props: IProps): React.ReactElement {
-  return <ChakraProvider>{props.children}</ChakraProvider>
+  const colors = {}
+  const theme = extendTheme({ colors })
+
+  return (
+    <ChakraProvider theme={theme}>
+      <CSSReset />
+      {props.children}
+    </ChakraProvider>
+  )
 }
