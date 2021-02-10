@@ -4,7 +4,7 @@
   "generators": {
     "@nrwl/react": { "application": { "babel": true } },
     "@nrwl/next": {
-      "application": { "style": "styled-components", "linter": "eslint" }
+      "application": { "style": "@emotion/styled", "linter": "eslint" }
     }
   },
   "defaultProject": "web",

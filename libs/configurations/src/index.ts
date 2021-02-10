@@ -1,1 +1,1 @@
-export { ApolloProvider } from './lib/apollo.provider'
+export { ApolloWrapper } from './lib/apollo.wrapper'

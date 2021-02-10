@@ -1,17 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
 
 /* eslint-disable-next-line */
 export interface IProps {}
 
 export default function Auth(props: IProps) {
   return (
-    <StyledAuth>
+    <div>
       <h1>Welcome to auth!</h1>
-    </StyledAuth>
+    </div>
   )
 }
-
-const StyledAuth = styled.div`
-  color: pink;
-`

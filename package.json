@@ -46,7 +46,6 @@
     "react-is": "17.0.1",
     "react-redux": "^7.2.2",
     "redux-localstorage-simple": "^2.4.0",
-    "styled-components": "5.2.1",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

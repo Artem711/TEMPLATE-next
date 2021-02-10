@@ -1,6 +1,13 @@
+// PLUGINS IMPORTS //
 import React, { useState, useEffect, useContext, createContext } from 'react'
 import nookies from 'nookies'
+
+// COMPONENTS IMPORTS //
+
+// EXTRA IMPORTS //
 import { FirebaseClient } from '@app/web/shared/config/firebase-client.config'
+
+/////////////////////////////////////////////////////////////////////////////
 
 const AuthContext = createContext<{ user: FirebaseClient.User | null }>({
   user: null,
