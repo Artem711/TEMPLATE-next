@@ -22,8 +22,6 @@
   },
   "projects": {
     "web": { "tags": [] },
-    "web-e2e": { "tags": [], "implicitDependencies": ["web"] },
-    "components": { "tags": [] },
-    "components-e2e": { "tags": [], "implicitDependencies": ["components"] }
+    "web-e2e": { "tags": [], "implicitDependencies": ["web"] }
   }
 }

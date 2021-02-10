@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import Components from './components'
+import { Header } from './index'
 
-describe('Components', () => {
+describe('Header', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Components title={'Name'} />)
+    const { baseElement } = render(<Header />)
     expect(baseElement).toBeTruthy()
   })
 })
