@@ -8,14 +8,19 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "resolveJsonModule": true,
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strict": true,
     "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
     "paths": {
-      "@web/*": ["apps/web/*"]
+      "@app/web/*": ["apps/web/*"],
+      "@lib/configurations": ["libs/configurations/src/index.ts"],
+      "@lib/translation": ["libs/translation/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

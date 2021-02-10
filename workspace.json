@@ -69,6 +69,46 @@
           "options": { "lintFilePatterns": ["apps/web-e2e/**/*.{js,ts}"] }
         }
       }
+    },
+    "configurations": {
+      "root": "libs/configurations",
+      "sourceRoot": "libs/configurations/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/configurations/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/configurations"],
+          "options": {
+            "jestConfig": "libs/configurations/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "translation": {
+      "root": "libs/translation",
+      "sourceRoot": "libs/translation/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["libs/translation/**/*.ts"] }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/translation"],
+          "options": {
+            "jestConfig": "libs/translation/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
